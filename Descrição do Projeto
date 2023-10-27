@@ -1,0 +1,32 @@
+###### Descrição do Checkpoint 3 #######
+
+#   1° obter_escolha_usuario -
+# Descrição: Obtém a escolha do usuário.
+# Entrada: Nenhuma.
+# Saída: Escolha do usuário (pedra, papel ou tesoura).
+
+# Dicas:
+# Implemente uma interface de usuário amigável.
+
+#   2° gerar_escolha_computador -
+# Descrição: Gera uma escolha aleatória para o computador.
+# Entrada: Nenhuma.
+# Saída: Escolha do computador.
+
+# Dicas:
+# Use a biblioteca random para gerar uma escolha aleatória.
+
+#   3° determinar_vencedor - 
+# Descrição: Determina o vencedor do jogo.
+# Entrada: Escolha do usuário e escolha do computador.
+# Saída: Resultado do jogo (vitória, derrota ou empate).
+
+# Dicas:
+# Forneça feedback ao usuário.
+
+#   4° jogar_novamente - 
+# Descrição: Pergunta ao usuário se ele quer jogar novamente.
+# Entrada: Nenhuma.
+# Saída: Resposta do usuário (sim ou não).
+# Dicas:
+# Mantenha o jogo envolvente.
