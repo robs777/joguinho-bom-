@@ -2,34 +2,57 @@ import random
 
 
 def obter_escolha_usuario():
-    escolha_usuario = input("Escolha: pedra (1), papel(2) ou tesoura(3)")
-    if escolha_usuario == "1":
+
+    jogador = input("Escolha: pedra (1), papel(2) ou tesoura(3)")
+    if jogador == "1":
         return "pedra"
-    elif escolha_usuario == "2":
+    elif jogador == "2":
         return "papel"
-    elif escolha_usuario == "3":
+    elif jogador == "3":
         return "tesoura"
     else:
         print ("Escolha inválida. Por favor digite 1, 2 ou 3")
-        return obter_escolha_usuario()
+        
 
 
+def gerar_escolha_computador():
+
+    jogo = ["Pedra", "Papel", "Tesoura"]
+    computador = random.randint(0,2)    
+    print ("Escolha do computador:{}".format(jogo[computador]))
+    return computador
 
 
-def gerar_escolha_computador(escolha_usuario):
-    pass
+ 
+
     
 
 
 
 
 
-# def determinar_vencedor():
+def determinar_vencedor(j, c):
+    pass
 
 
 
 
-# def jogar_novamente():
+
+
+
+
+
+def jogar_novamente():
+    print("Deseja jogar novamente?")
+    jogador = input("Digite sim ou não: ")
+    if jogador == "sim":
+        return jogo()
+    else:
+        return  print("que pena, nos vemos em breve"), exit()
+        
+    
+        
+
 
 
 
@@ -39,17 +62,15 @@ def gerar_escolha_computador(escolha_usuario):
 def main():
     
     while True:
-        print("-"*20)
+        print("-="*10)
         print("Jokenpo")
-        print("-"*20)
+        print("-="*10)
         print("Vamos jogar?")
-        us_digit= input("digite sim ou não")
+        us_digit= input("digite sim ou não: ")
 
         if  us_digit == "sim":
-            abcd = obter_escolha_usuario()
-            print(f"abcd == {abcd}")
-            gerar_escolha_computador(abcd)
-        
+           jogo()
+            
         elif us_digit == "não":
             print("que pena, nos vemos em breve")
             break
@@ -57,7 +78,14 @@ def main():
         else:
             print(f"opção {us_digit} invalida. Digite apenas sim ou não")
 
+      
 
+def jogo():
+
+    j = obter_escolha_usuario()
+    c = gerar_escolha_computador()
+    determinar_vencedor(j, c)
+    jogar_novamente()
 
 
 if __name__=="__main__":
