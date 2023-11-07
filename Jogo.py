@@ -32,6 +32,7 @@ def gerar_escolha_computador():
 
 
 def determinar_vencedor(j, c):
+<<<<<<< HEAD
     if j == "pedra":
         if c == 0:
             print ("Empate")
@@ -57,6 +58,9 @@ def determinar_vencedor(j, c):
         elif c == 2:
             print("Empate")
     
+=======
+    pass
+>>>>>>> efcdf8654c40def64faa7d25ce154660331af7c3
 
 
 
@@ -65,6 +69,10 @@ def determinar_vencedor(j, c):
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> efcdf8654c40def64faa7d25ce154660331af7c3
 def jogar_novamente():
     print("Deseja jogar novamente?")
     jogador = input("Digite sim ou não: ")
