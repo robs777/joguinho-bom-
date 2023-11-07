@@ -2,16 +2,19 @@ import random
 
 
 def obter_escolha_usuario():
-
-    jogador = input("Escolha: pedra (1), papel(2) ou tesoura(3)")
-    if jogador == "1":
-        return "pedra"
-    elif jogador == "2":
-        return "papel"
-    elif jogador == "3":
-        return "tesoura"
-    else:
-        print ("Escolha inválida. Por favor digite 1, 2 ou 3")
+    while True:
+        jogador = input("Escolha: pedra (1), papel(2) ou tesoura(3)")
+        if jogador == "1":
+            return "pedra"
+        elif jogador == "2":
+            return "papel"
+        elif jogador == "3":
+            return "tesoura"
+        else:
+            print("Escolha inválida. Por favor digite 1, 2 ou 3 ")
+    
+    
+    
         
 
 
@@ -32,7 +35,6 @@ def gerar_escolha_computador():
 
 
 def determinar_vencedor(j, c):
-<<<<<<< HEAD
     if j == "pedra":
         if c == 0:
             print ("Empate")
@@ -58,9 +60,6 @@ def determinar_vencedor(j, c):
         elif c == 2:
             print("Empate")
     
-=======
-    pass
->>>>>>> efcdf8654c40def64faa7d25ce154660331af7c3
 
 
 
@@ -69,17 +68,20 @@ def determinar_vencedor(j, c):
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> efcdf8654c40def64faa7d25ce154660331af7c3
 def jogar_novamente():
-    print("Deseja jogar novamente?")
-    jogador = input("Digite sim ou não: ")
-    if jogador == "sim":
-        return jogo()
-    else:
-        return  print("que pena, nos vemos em breve"), exit()
+    while True:
+        print("Deseja jogar novamente?")
+        jogador = input("Digite sim ou não: ")
+        if jogador == "sim":
+            return jogo()
+    
+        elif jogador == "não":
+            print("que pena, nos vemos em breve")
+            break
+        else:
+            print ("Escolha inválida. Por favor digite sim ou não ")
+
+        
         
     
         
